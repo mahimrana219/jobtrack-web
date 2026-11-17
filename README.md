@@ -4,7 +4,7 @@ The frontend for [JobTrack API](https://github.com/mahimrana219/jobtrack-api): t
 
 Built with **Next.js (App Router), React, TypeScript and Tailwind CSS**.
 
-**Live demo:** _added after the first Vercel deploy_. Open it and choose **Explore with sample data**: no account needed.
+**Live demo:** https://jobtrack-web-lyart.vercel.app. Open it and choose **Explore with sample data**: no account needed.
 
 ## Features
 
