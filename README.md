@@ -12,6 +12,7 @@ Built with **Next.js (App Router), React, TypeScript and Tailwind CSS**.
 - **Board view** with drag and drop between Wishlist, Applied, Interview, Offer and Rejected
 - **List view** with search, sorting and pagination (server-side when connected to the API)
 - **Add, edit and delete** applications in a side panel: stage, location, salary, applied and follow-up dates, job link, notes
+- **Export to CSV**: download every application as a spreadsheet that opens cleanly in Excel or Google Sheets
 - **Response rate and follow-ups due**, calculated from your applications
 - **JWT sign in and sign up** against the JobTrack API
 - **Demo mode**: runs fully in the browser (localStorage) when no API URL is set, so the deploy works on its own
@@ -54,6 +55,7 @@ components/
 lib/
   api.ts                API client and auth
   demo.ts               In-browser demo data source
+  csv.ts                CSV export
   types.ts, format.ts
 ```
 

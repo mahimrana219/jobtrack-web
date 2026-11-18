@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation';
 import { ApplicationDrawer } from '@/components/ApplicationDrawer';
 import { Board } from '@/components/Board';
 import { ListView } from '@/components/ListView';
+import { downloadCsv } from '@/lib/csv';
 import { PipelineRibbon } from '@/components/PipelineRibbon';
 import { Button, Logo, fieldBase } from '@/components/ui';
 import { applications, currentUser, getMode, signOut } from '@/lib/api';
@@ -179,6 +180,14 @@ export default function Dashboard() {
               <option value="oldest">Oldest first</option>
               <option value="company">Company A to Z</option>
             </select>
+            <button
+              type="button"
+              onClick={() => downloadCsv(boardItems)}
+              disabled={boardItems.length === 0}
+              className={`${fieldBase} shrink-0 font-semibold text-ink-soft hover:text-ink disabled:opacity-40`}
+            >
+              Export CSV
+            </button>
           </div>
         </div>
 
